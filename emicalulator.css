@@ -4,7 +4,7 @@
     align-items: center;
     align-content: center;
     align-self: center;
-    height: 500px;
+    height: 550px;
     width: 500px;
     margin: auto;
     text-align: center;
@@ -16,7 +16,7 @@
 .heading {
     color:green;
     align-self: center;
-    font-family: Helvetica;
+    font-family:Poppins;
     padding-top: 20px;
     
 }
@@ -34,6 +34,7 @@
     display: inline-block;
     font-size: 16px;
     align-self: center;
+    font-family: Poppins;
    
 }
 .button:hover {
@@ -45,6 +46,7 @@
     color: red;
     font-size: large;
     font-weight: 200;
+    font-family: Poppins;
 }
 
 .input{
@@ -67,7 +69,7 @@
     align-self: flex-start;
     color: green;
     padding-bottom: 5px;
-    font-family: Helvetica;
+    font-family: Poppins;
   
     font-size: large;
     margin-left: 20px;
@@ -80,4 +82,6 @@
     padding-bottom: 10px;
     padding-left: 20px;
     margin-right: 20px;
+   
 }
+
