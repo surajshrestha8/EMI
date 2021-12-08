@@ -36,8 +36,9 @@ function calculate() {
         console.log(finalrate);
         EMI1 = amount*r*finalrate;
         EMI2 = (finalrate-1);
-        FINALEMI = EMI1/EMI2;
-        document.getElementById('EMI').innerHTML= FINALEMI;
+        FINALEMI = (EMI1/EMI2).toFixed(2);
+        
+        document.getElementById('EMI').innerHTML= 'EMI to pay:'+' Rs.' +FINALEMI;
 
     }
 
