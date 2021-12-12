@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMI Calculator</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="emicalulator.css">
-    
-   
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="emicalulator.css" />
+  </head>
+  <body>
     <div class="container">
-        <h3 class="heading">EMI Calculator</h3>
+      <h3 class="heading">EMI Calculator</h3>
 
-        <br>
-        <div class='enterdetails'>
-        
-        <label class="label" for="Amount"> Amount:(In Rs)</label>
+      <br />
+      <div class="enterdetails">
+        <label class="label" for="Amount"> Amount (in rupees)</label>
 
-     
-        <input class="input" type="number" id="amount" name="amount" min="0" required placeholder="">
-       
-        
-    </div>
-       
-        <div class="enterdetails">
-        <label class="label" for ="Time">Time:(In months)</label>
+        <input
+          class="input"
+          type="number"
+          id="amount"
+          name="amount"
+          min="0"
+          required
+          placeholder=""
+        />
+      </div>
 
-        <input class="input" type = "number" id="time" name="time" required>
+      <div class="enterdetails">
+        <label class="label" for="Time">Time (in months)</label>
+
+        <input class="input" type="number" id="time" name="time" required />
+      </div>
+      <div class="enterdetails">
+        <label class="label" for="rate">Rate</label>
+
+        <input class="input" type="number" id="rate" name="rate" required />
+      </div>
+      <div  id="button-box">
+            <button class="button" onclick="calculate()">Calculate</button>
+            <button class="resetButton"><i class="fa fa-refresh" style="padding-top: 20px;"></i></button>
+      </div>
       
-    
-    </div>
-    <div class="enterdetails">
-        <label class="label" for="rate">Rate:</label>
-        
-
-        <input class="input" type = "number" id="rate" name="rate" required>
-
-      
-        
-    </div>
-       <div class="enterdetails">
-        
-        <button class="button" onclick="calculate()">Calculate</button>
-        <br>
-        <br>
         <span class="error" id="EMI"></span>
-    </div> 
-            </div>
-            
-
-    
-</body>
-<script src="emicalculator.js"></script>
-
+      
+    </div>
+  </body>
+  <script src="emicalculator.js"></script>
 </html>

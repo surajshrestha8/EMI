@@ -1,3 +1,4 @@
+
 function calculate() {
     const amount  = document.getElementById('amount').value;
     const time  = document.getElementById('time').value;
@@ -27,8 +28,7 @@ function calculate() {
     }
     else if(amount<0 || rate<0 || time<0){
         document.getElementById('EMI').innerHTML='Please enter valid details';
-    }
-    
+    }  
     else{
         r= rate/(100*12);
         console.log(amount,time,r);
@@ -37,19 +37,18 @@ function calculate() {
         EMI1 = amount*r*finalrate;
         EMI2 = (finalrate-1);
         FINALEMI = (EMI1/EMI2).toFixed(2);
-        
-        document.getElementById('EMI').innerHTML= 'EMI to pay:'+' Rs.' +FINALEMI;
+        document.getElementById('EMI').innerHTML= 'Total EMI to pay: '+' Rs. '+FINALEMI;
+    }    
 
-    }
-
-
-
-
-
-    
-
-
-    
-
-    
 }
+ const resetButton = document.querySelector(".resetButton");
+ resetButton.addEventListener("click",resetInput);
+ 
+function resetInput() {
+    let inputData = document.querySelectorAll(".input");
+    for(var i=0; i<inputData.length; i++){
+        inputData[i].value = '';
+        document.getElementById('EMI').innerHTML= '';
+    }   
+ }
+ 
